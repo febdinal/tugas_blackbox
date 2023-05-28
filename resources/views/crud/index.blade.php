@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <meta http-equiv="X-UA-Compatible" content="ie=edge">  
     <meta name="csrf-token" content="{{ csrf_token() }}">  
-    <title>Post List - Tutorial CRUD Laravel 10 @ qadrlabs.com</title>  
+    <title>BlackBox</title>  
 
 </head>  
 
@@ -18,12 +18,21 @@
             <h1 class="text-3xl font-bold">  
                 List Product  
             </h1>  
-        </div>        <div class="col-span-4">  
-            <div class="flex justify-end">  
-                <a href="{{ route('crud.create') }}"  
-                   class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"  
-                   id="add-post-btn">+ Create New Product</a>  
-            </div>        </div>    </div>    <div class="bg-white p-5 rounded shadow-sm">  
+        </div>        
+            <div class="col-span-4">  
+                <div class="flex justify-end">  
+                    <a href="{{ route('crud.create') }}"  
+                    class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"  
+                    id="add-post-btn">+ Create New Product</a>  
+                </div>        
+                <div class="flex justify-end mt-3">  
+                    <a href="{{ route('logout_post') }}"  
+                    class="inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"  
+                    id="add-post-btn">Logout</a>  
+                </div>    
+            </div>        
+        </div>    
+            <div class="bg-white p-5 rounded shadow-sm">  
         <!-- Notifikasi menggunakan flash session data -->  
         @if (session('success'))  
             <div class="p-3 rounded bg-green-500 text-green-100 mb-4">  

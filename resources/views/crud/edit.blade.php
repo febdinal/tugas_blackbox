@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <meta http-equiv="X-UA-Compatible" content="ie=edge">  
     <meta name="csrf-token" content="{{ csrf_token() }}">  
-    <title>Edit Post - Tutorial CRUD Laravel 10 @ qadrlabs.com</title>  
+    <title>BlackBox</title>  
 </head>  
 
 <body>  

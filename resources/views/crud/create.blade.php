@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <meta http-equiv="X-UA-Compatible" content="ie=edge">  
     <meta name="csrf-token" content="{{ csrf_token() }}">  
-    <title>Create New Post - Tutorial CRUD Laravel 10 @ qadrlabs.com</title>  
+    <title>BlackBox</title>  
 </head>  
 
 <body>  
@@ -15,7 +15,7 @@
     <div class="grid grid-cols-8 gap-4 p-5">  
         <div class="col-span-4 mt-2">  
             <h1 class="text-3xl font-bold">  
-                CREATE NEW POST  
+                CREATE NEW Product  
             </h1>  
         </div>        
         <div class="col-span-4">  

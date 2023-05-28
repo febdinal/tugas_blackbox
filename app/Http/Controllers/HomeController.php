@@ -31,7 +31,7 @@ class HomeController extends Controller
         $crud->delete();  
         return redirect()  
             ->route('crud.index')  
-            ->with('success', 'Post deleted successfully.');  
+            ->with('success', 'Product deleted successfully.');  
     }
 
     public function store(Request $request): RedirectResponse  
@@ -42,7 +42,7 @@ class HomeController extends Controller
             'description' => 'required'  
         ]);  
 
-        $post = Crud::create([  
+        Crud::create([  
             'name' => $request->get('name'),  
             'qty' => $request->get('qty'),  
             'description' => $request->get('description'),  
@@ -70,4 +70,5 @@ class HomeController extends Controller
         return redirect()->route('crud.index')  
             ->with('success', 'Product berhasil dirubah!');  
     }
+
 }
